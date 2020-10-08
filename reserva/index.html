@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sistema de Reservas</title>
+        <style>
+            .container{display: flex;flex-direction: row;justify-content: space-around;}
+            .seat td{text-align: center;background-color: #1e824c;padding: 8px;}
+            .seat table{display: none;}
+        </style>
+    </head>
+    <body>        
+        <h1 align="center">Sistema de Reservas de Passagens</h1>
+        <div class="container">
+            <div> 
+                <img id="bus" src="img/bus1.png" height="200px" alt="Itaitinga">
+                <p id="nome_produto">Reserva de passagem Itaitinga</p>
+                <p>Valor: <span style="color:#090">R$ 30,00</span></p>
+                <button id="showSeat1">Reservar</button>
+                <div class="seat" id="seat1">                    
+                    <table border="3" id="table1">
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                          </tr>
+                            <tr>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <img id="bus" src="img/bus2.png" height="200px" alt="Paracuru">
+                <p id="nome_produto">Reserva de passagem Paracuru</p>
+                <p>Valor: <span style="color:#090">R$ 45,00</span></p>
+                <button id="showSeat2">Reservar</button>
+                <div class="seat" id="seat2">    
+                <table border="3" id="table2">
+                  <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                  </tr>
+                    <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                </tr>
+                </table>
+            </div>    
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready( function(){$("#showSeat1").click(function(){$("#table1").toggle();});
+                $("#showSeat2").click(function(){$("#table2").toggle();});
+                $("td").click(function(){$(this).css("background-color", "#d91e18")});
+            });
+        </script>
+    </body>
+</html>
